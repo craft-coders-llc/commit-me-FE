@@ -1,0 +1,41 @@
+.main-section {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.main-section_intro {
+  display: flex;
+
+}
+
+.coso {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin-left: 20vw;
+  margin-top: 5vh;
+  width: 25%;
+  background-color: #3C0956;
+  color: #31C1B8;
+
+}
+
+.main-text {
+  color: #E72988;
+  font-size: 4.5rem;
+  margin-top: 25vh;
+  margin-right: 15vw;
+  margin-left: 15vw;
+
+}
+
+.main-section_image {
+  height: 50vh;
+  margin-top: 25vh;
+  margin-right: 15vw;
+  margin-bottom: 25vh;
+}
