@@ -1,11 +1,17 @@
 .footer-container {
     display: flex;
-    background-color: #031F1E;
+    background-color: #000000;
     color: #FAF9F6;
-    padding: 50rem;
+    padding: 0.5rem;
     text-align: bottom;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  
   }
   
   .text-container{
-    background-color: #031F1E;
+    background-color: #000000;
+    
+  }
+
+  .text{
+    color:#31C1B8 ;
   }
