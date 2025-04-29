@@ -1,14 +1,11 @@
-
 import "./App.css";
-import Footer from "./components/footer/Footer"
+import Homepage from "./pages/Homepage/HomePage";
 
 function App() {
   return (
-    <>
-      
-      <h1>hola </h1>
-      <Footer/>
-    </>
+ 
+<>
+ </>
   );
 }
 
