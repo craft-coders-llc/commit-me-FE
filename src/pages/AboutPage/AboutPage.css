@@ -1,0 +1,37 @@
+.about-section {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  padding: 5vh 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title {
+  color: #E72988;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-logo {
+  display: block;
+  margin: 0 auto 2rem auto;
+  max-width: 25%;
+}
+
+.about-text, .about-contact {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px; 
+  text-align: left;
+  color: white;
+}
+
+.about-subtitle {
+  color: #E72988;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2rem;
+}
