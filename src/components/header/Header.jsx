@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./header.css";
-import logo from "../../public/img/logo.svg";
-import lupa from "../../public/img/lupaBuscador.svg";
+import logo from "../../../public/img/logo.svg";
+import lupa from "../../../public/img/lupaBuscador.svg";
 
 const Header = () => {
   return (
@@ -19,7 +19,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about">
+              <NavLink className="nav-link" to="/sobre-nosotras">
                 Sobre Nosotras
               </NavLink>
             </li>

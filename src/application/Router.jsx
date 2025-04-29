@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import Header from "../components/Header";
 import App from "../App";
 import Homepage from "../pages/Homepage/HomePage";
 import AboutPage from "../pages/AboutPage/AboutPage";
+import Header from "../components/header/Header";
+
 
 function Router() {
   return (
