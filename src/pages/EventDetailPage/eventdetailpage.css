@@ -82,3 +82,47 @@ body {
   font-size: 5rem;
 }
 
+@media (max-width: 768px) {
+  .event-details-container {
+    padding: 1.5rem;
+  }
+
+  .event-title {
+    font-size: 2rem;
+  }
+
+  .event-date {
+    font-size: 1rem;
+  }
+
+  .event-image {
+    max-height: 300px;
+  }
+
+  .event-section h4 {
+    font-size: 1.2rem;
+  }
+
+  .event-not-found {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-title {
+    font-size: 1.8rem;
+  }
+
+  .event-date {
+    font-size: 0.9rem;
+  }
+
+  .event-image {
+    max-height: 250px;
+  }
+
+  .event-details-container {
+    margin: 2rem 1rem;
+    padding: 1rem;
+  }
+}
