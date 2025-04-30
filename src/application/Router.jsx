@@ -2,9 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import App from "../App";
 import Homepage from "../pages/Homepage/HomePage";
 import EventCard from "../components/EventCard/EventCard";
-import AboutPage from "../pages/AboutPage/AboutPage";
-import Header from "../components/header/Header";
+import AboutPage from "../pages/AboutPage/AboutPage"
 import EventDetailsPage from "../pages/EventDetailPage/EventDetailPage";
+import Header from "../components/header/Header";
+
 
 
 function Router() {
