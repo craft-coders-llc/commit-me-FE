@@ -3,9 +3,9 @@ import App from "../App";
 import Homepage from "../pages/Homepage/HomePage";
 import EventCard from "../components/EventCard/EventCard";
 import AboutPage from "../pages/AboutPage/AboutPage";
-import Header from "../components/header/Header";
 import EventDetailsPage from "../pages/EventDetailPage/EventDetailPage";
 import EventsPage from "../pages/EventsPage/EventsPage";
+import Header from "../components/header/Header";
 
 function Router() {
   return (
