@@ -1,0 +1,38 @@
+.card {
+  background-color: black;
+  width: 18rem;
+  height: 30rem;
+  margin: 1rem;
+  padding: 5px
+}
+
+.card-img {
+  border: 5px solid white;
+  width: 16rem;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.card-title {
+  color: #E72988;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.card-text {
+  color: white;
+  font-size: 1.5rem;
+
+}
+
+.card_date {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card_location {
+  color: #31C1B8;
+  font-size: 1.5rem;
+}
