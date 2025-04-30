@@ -4,7 +4,7 @@ import Homepage from "../pages/Homepage/HomePage";
 import EventCard from "../components/EventCard/EventCard";
 import AboutPage from "../pages/AboutPage/AboutPage";
 import Header from "../components/header/Header";
-import EventDetailsPage from "../pages/EventDescriptionPage/EventDetailPage";
+import EventDetailsPage from "../pages/EventDetailPage/EventDetailPage";
 import EventsList from "../components/EventsList/EventsList";
 
 
@@ -15,7 +15,7 @@ function Router() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/pruebas" element={<EventsList />} />
-        <Route path="/sobre-nosotras" element={<AboutPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/event-detail" element={<EventDetailsPage />} />
       </Routes>
     </BrowserRouter>

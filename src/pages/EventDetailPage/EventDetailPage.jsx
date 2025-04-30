@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import mockData from "../../data/mockData"; 
+import mockData from "../../data/mockData";
+import "../EventDetailPage/eventdetailpage.css"
 
 const EventDetailsPage = () => {
   const { id } = useParams();
@@ -7,9 +8,7 @@ const EventDetailsPage = () => {
   const event = mockData.find((item) => item.id === parseInt(id));
 
   if (!event) {
-    return (
-      <h2 className="text-center mt-5 text-white">Evento no disponible</h2>
-    );
+    return <h2 className="event-not-found">Evento no disponible</h2>;
   }
 
   return (
@@ -34,9 +33,6 @@ const EventDetailsPage = () => {
           </li>
           <li>
             <strong>Organiza:</strong> {event.organizer}
-          </li>
-          <li>
-            <strong>Duración:</strong> {event.duration}
           </li>
           <li>
             <strong>Modalidad:</strong> {event.mode}

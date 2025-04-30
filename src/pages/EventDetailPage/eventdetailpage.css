@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  color: black; /* para todo lo que esté fuera del contenedor blanco */
+  color: white; 
 }
 
 .event-details-container {
@@ -74,3 +74,11 @@ body {
   color: #E72988;
   text-decoration: underline;
 }
+
+.event-not-found {
+  color: #E72988;
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 5rem;
+}
+
