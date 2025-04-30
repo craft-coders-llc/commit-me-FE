@@ -1,0 +1,49 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width:5rem
+  align-items: center;
+  background-color: #000000;
+  color: #FAF9F6;
+  padding: 1.5rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 1px solid #31C1B8;
+  flex-wrap: wrap;
+}
+
+.footer-container a {
+  color: #31C1B8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-container .text {
+  color: #31C1B8;
+  max-width: 600px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.icons{
+  display: flex;
+  gap:0.5rem;
+  margin-right:1rem;
+  
+}
+
+.icons img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+  
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+}

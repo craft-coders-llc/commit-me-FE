@@ -1,7 +1,8 @@
 import "./HomePage.css";
-
+import Footer from "../../components/footer/Footer"
 function Homepage() {
   return (
+    <>
     <section className="main-section">
       <div className="main-section_intro">
         <div className="coso">
@@ -17,6 +18,8 @@ function Homepage() {
         />
       </div>
     </section>
+    <Footer/>
+    </>
   );
 }
 
