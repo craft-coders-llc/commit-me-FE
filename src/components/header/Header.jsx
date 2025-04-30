@@ -15,7 +15,7 @@ const Header = () => {
         </NavLink>
 
         <div className="d-flex align-items-center">
-          {/* Lupa visible solo en mobile */}
+          
           <NavLink to="/search" className="nav-link mobile-search-icon">
             <img
               src="/img/lupaBuscador.svg"
@@ -61,7 +61,7 @@ const Header = () => {
                 Contacto
               </NavLink>
             </li>
-            {/* Lupa solo en desktop */}
+          
             <li className="nav-item desktop-search-icon">
               <NavLink className="nav-link" to="/search">
                 <img
