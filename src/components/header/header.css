@@ -1,0 +1,27 @@
+.navbar {
+  background-color: black;
+  padding: 1rem;
+}
+
+.navbar .nav-link {
+  color: #31C1B8;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  color: #FE8284;
+}
+
+.navbar .nav-link.active {
+  color: #FE8284;
+}
+
+.logo {
+  height: 100px;
+}
+
+.lupa-icon {
+  height: 50px;
+  margin-top: -7px;
+}
