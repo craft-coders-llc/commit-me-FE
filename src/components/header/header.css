@@ -4,14 +4,14 @@
 }
 
 .navbar .nav-link {
-  color: #31c1b8;
+  color: #31C1B8;
   transition: color 0.3s ease;
   text-decoration: none;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-  color: #fe8284;
+  color: #FE8284;
 }
 
 .logo {
@@ -23,6 +23,7 @@
   margin-top: -7px;
 }
 
+/* Botón hamburguesa */
 .navbar-toggler {
   border: none;
   background: transparent;
@@ -74,6 +75,7 @@
   }
 }
 
+/* Por defecto: lupa mobile oculta, lupa desktop visible */
 .mobile-search-icon {
   display: none;
 }
@@ -82,6 +84,7 @@
   display: block;
 }
 
+/* En responsive: mostrar lupa mobile junto a hamburguesa, ocultar la del menú */
 @media (max-width: 992px) {
   .mobile-search-icon {
     display: block;
