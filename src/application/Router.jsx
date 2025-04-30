@@ -5,8 +5,7 @@ import EventCard from "../components/EventCard/EventCard";
 import AboutPage from "../pages/AboutPage/AboutPage";
 import Header from "../components/header/Header";
 import EventDetailsPage from "../pages/EventDetailPage/EventDetailPage";
-import EventsList from "../components/EventsList/EventsList";
-
+import EventsPage from "../pages/EventsPage/EventsPage";
 
 function Router() {
   return (
@@ -14,7 +13,7 @@ function Router() {
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/pruebas" element={<EventsList />} />
+        <Route path="/events" element={<EventsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/event-detail" element={<EventDetailsPage />} />
       </Routes>
