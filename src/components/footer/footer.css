@@ -1,6 +1,7 @@
 .footer-container {
   display: flex;
   justify-content: space-between;
+  width:5rem
   align-items: center;
   background-color: #000000;
   color: #FAF9F6;
