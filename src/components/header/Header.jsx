@@ -18,8 +18,8 @@ const Header = () => {
                 Explorar Eventos
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/sobre-nosotras">
+            <li className="nav-item"> 
+              <NavLink className="nav-link" to="/about">
                 Sobre Nosotras
               </NavLink>
             </li>
