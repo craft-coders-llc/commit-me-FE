@@ -1,17 +1,31 @@
+import { useEffect, useState } from "react";
+import mockData from "../../data/mockData";
 import "./EventCard.css";
 
 function EventCard() {
+  const [events, setEvents] = useState();
+
+  useEffect(() => {
+    const fetchMock = async () => {
+      setEvents(mockData);
+    };
+
+    fetchMock();
+  }, []);
+
+  if (!events) return <p>Cargando</p>;
+
   return (
     <section>
-      <div className="card">
-        <img className="card-img" src="/img/evento_1.png" />
-        <h1 className="card-title">WOMEN IN TECH</h1>
-        <p className="card-text">
-          Evento destinado a la comunidad tech femenina de Barcelona.
-        </p>
-        <span className="card_date">29/04/2029</span>
-        <span className="card_location">W hotel</span>
-      </div>
+      {events.map((event) => (
+        <div className="card" key={event.id}>
+          <img className="card-img" src={event.img} />
+          <h1 className="card-title">{event.name}</h1>
+          <p className="card-text">{event.description.slice(0, 50)}... </p>
+          <span className="card_date">{event.date}</span>
+          <span className="card_location">{event.location}</span>
+        </div>
+      ))}
     </section>
   );
 }
