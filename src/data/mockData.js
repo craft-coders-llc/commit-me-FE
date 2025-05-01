@@ -2,7 +2,7 @@ const mockData = [
   {
     id: 1,
     name: "TechFest 2025",
-    img: "/img/evento_1.jpg",
+    img: "/img/evento_1.png",
     date: "15 de junio de 2025",
     location: "Barcelona, España",
     organizer: "Commit-me",
@@ -15,7 +15,7 @@ const mockData = [
   {
     id: 2,
     name: "ReactConf Europa",
-    img: "/img/evento_2.jpg",
+    img: "/img/evento_2.png",
     date: "1 de julio de 2025",
     location: "Madrid, España",
     organizer: "React Europe",
@@ -28,7 +28,7 @@ const mockData = [
   {
     id: 3,
     name: "Figma Jam UX Day",
-    img: "/img/evento_3.jpg",
+    img: "/img/evento_3.svg",
     date: "22 de mayo de 2025",
     location: "Valencia, España",
     organizer: "Figma Community",
