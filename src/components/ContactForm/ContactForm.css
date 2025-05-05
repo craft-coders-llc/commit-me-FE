@@ -34,3 +34,26 @@ padding:1rem;
     background-color: #31C1B8;
     color: #3C0956;
 }
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background:#31C1B8;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  
