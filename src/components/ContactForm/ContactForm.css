@@ -1,0 +1,36 @@
+.formContainer{
+display:flex;
+justify-content: center;
+padding:9rem;
+
+
+}
+.contactContainer{
+justify-self: center;
+padding: 1rem;
+width: 40rem;
+background-color: #3C0956;
+border-radius: 20px;
+}
+
+.contactInfo{
+    justify-items: center; 
+}
+
+.textArea{
+display: flex;
+justify-items: center;
+padding: 3rem;
+}
+
+.buttonContainer{
+display: flex;
+flex-wrap: wrap;
+justify-self: center;
+padding:1rem;
+}
+
+.btn-enviar{
+    background-color: #31C1B8;
+    color: #3C0956;
+}

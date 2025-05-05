@@ -3,14 +3,10 @@ import mockData from "../../data/mockData";
 import "./EventCard.css";
 
 function EventCard() {
-  const [events, setEvents] = useState();
+  const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    const fetchMock = async () => {
-      setEvents(mockData);
-    };
-
-    fetchMock();
+    setEvents(mockData);
   }, []);
 
   if (!events) return <p>Cargando</p>;
