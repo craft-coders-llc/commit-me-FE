@@ -25,7 +25,7 @@ function Homepage() {
           />
         </div>
       </section>
-      <Footer />
+
     </>
   );
 }
