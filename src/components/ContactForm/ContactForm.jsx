@@ -73,7 +73,7 @@ const ContactForm = () => {
           <div className="modalContent">
             <h3>✅ ¡Mensaje enviado!</h3>
             <p>Gracias por contactarnos. Te responderemos pronto.</p>
-            <Button type="button" className="btn-cerrar" text="Cerrar" onClick={closeModal}/>
+            <button type="button" className="btn-cerrar" text="Cerrar" onClick={closeModal}> Cerrar </button>
           </div>
         </div>
       )}
