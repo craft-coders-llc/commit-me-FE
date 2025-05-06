@@ -1,0 +1,10 @@
+.createform-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title {
+  margin-bottom: 1rem;
+
+}
