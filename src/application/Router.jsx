@@ -8,6 +8,7 @@ import EventsPage from "../pages/EventsPage/EventsPage";
 import Header from "../components/header/Header";
 import ContactPage from "../pages/ContactPage/ContactPage"
 import Footer  from "../components/footer/Footer";
+import RegistrationPage from "../pages/RegistrationPage/RegistrationPage";
 
 function Router() {
   return (
@@ -19,6 +20,7 @@ function Router() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/event-detail" element={<EventDetailsPage />} />
         <Route path="/contact" element={<ContactPage/>} />
+        <Route path="/registration" element={<RegistrationPage/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>

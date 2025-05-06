@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, Container, Row, Col } from "react-bootstrap";
-import Button from "./Button";
+import Button from "../../components/button/Button";
+import "../FormRegistration/FormRegistration.css";
 
 const FormRegistration = () => {
   const [formData, setFormData] = useState({
@@ -32,62 +33,71 @@ const FormRegistration = () => {
   };
 
   return (
-    <Container>
-      <Row className="justify-content-center">
-        <Col md={6}>
-          <h2 className="text-center my-4">Formulario de Registro</h2>
-          <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="formUsername">
-              <Form.Label>Nombre de Usuario</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Ingresa tu nombre de usuario"
-                name="username"
-                value={formData.username}
-                onChange={handleInputChange}
-                required
-              />
-            </Form.Group>
+    <div className="registration-page">
+      <div className="registration-card">
+        <h2>Formulario de Registro</h2>
+        <Form onSubmit={handleSubmit}>
+          <Form.Group controlId="formUsername">
+            <Form.Label className="form-label">Nombre de Usuario</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Ingresa tu nombre de usuario"
+              name="username"
+              value={formData.username}
+              onChange={handleInputChange}
+              required
+              className="form-control"
+            />
+          </Form.Group>
 
-            <Form.Group controlId="formEmail">
-              <Form.Label>Email</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Ingresa tu email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-              />
-            </Form.Group>
+          <Form.Group controlId="formEmail">
+            <Form.Label className="form-label">Email</Form.Label>
+            <Form.Control
+              type="email"
+              placeholder="Ingresa tu email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              required
+              className="form-control"
+            />
+          </Form.Group>
 
-            <Form.Group controlId="formPassword">
-              <Form.Label>Contraseña</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="Ingresa tu contraseña"
-                name="password"
-                value={formData.password}
-                onChange={handleInputChange}
-                required
-              />
-            </Form.Group>
+          <Form.Group controlId="formPassword">
+            <Form.Label className="form-label">Contraseña</Form.Label>
+            <Form.Control
+              type="password"
+              placeholder="Ingresa tu contraseña"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
+              required
+              className="form-control"
+            />
+          </Form.Group>
 
-            <Form.Group controlId="formFile" className="mb-3">
-              <Form.Label>Selecciona una Imagen de Perfil</Form.Label>
-              <Form.Control
-                type="file"
-                name="profileImage"
-                onChange={handleFileChange}
-                accept="image/*"
-              />
-            </Form.Group>
+          <Form.Group controlId="formFile" className="mb-3">
+            <Form.Label className="form-label">
+              Selecciona una Imagen de Perfil
+            </Form.Label>
+            <Form.Control
+              type="file"
+              name="profileImage"
+              onChange={handleFileChange}
+              accept="image/*"
+              className="form-control"
+            />
+          </Form.Group>
 
-            <Button text="Registrar" type="submit" to="" />
-          </Form>
-        </Col>
-      </Row>
-    </Container>
+          <Button
+            text="Registrar"
+            type="submit"
+            to=""
+            className="custom-submit-btn"
+          />
+        </Form>
+      </div>
+    </div>
   );
 };
 

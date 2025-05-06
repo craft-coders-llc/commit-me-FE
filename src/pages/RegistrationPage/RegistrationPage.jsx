@@ -1,11 +1,13 @@
-import FormRegistration from "../../components/FormRegistration/FormRegistration";
 
-function App() {
+import FormRegistration from "../../components/FormRegistration/FormRegistration"
 
-    return (<div className="App">
-        <FormRegistration />
-    </div>;
-    );
+function RegistrationPage() {
+
+  return (
+
+    <FormRegistration/>
+
+  );
 }
 
-export default App;
+export default RegistrationPage;
