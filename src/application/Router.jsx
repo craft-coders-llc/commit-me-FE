@@ -10,6 +10,7 @@ import ContactPage from "../pages/ContactPage/ContactPage";
 import Footer from "../components/footer/Footer";
 import RegistrationPage from "../pages/RegistrationPage/RegistrationPage";
 import CreateEventPage from "../pages/CreateEventPage/CreateEventPage";
+import LoginPage from "../pages/LoginPage/LoginPage";
 
 function Router() {
   return (
@@ -21,6 +22,7 @@ function Router() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/event-detail" element={<EventDetailsPage />} />
         <Route path="/create-event" element={<CreateEventPage />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/registration" element={<RegistrationPage/>} />
       </Routes>
