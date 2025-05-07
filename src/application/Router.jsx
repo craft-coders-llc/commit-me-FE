@@ -10,7 +10,7 @@ import ContactPage from "../pages/ContactPage/ContactPage";
 import Footer from "../components/footer/Footer";
 import RegistrationPage from "../pages/RegistrationPage/RegistrationPage";
 import CreateEventPage from "../pages/CreateEventPage/CreateEventPage";
-import UserPage from "../components/User/User";
+import UserPage from "../pages/UserPage/UserPage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 
 function Router() {
