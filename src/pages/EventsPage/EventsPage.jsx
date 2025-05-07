@@ -7,7 +7,6 @@ import FilterEvents from "../../components/FilterEvents/FilterEvents";
 function EventsPage() {
   return (
     <section>
-      <FilterEvents/>
       <EventsList />
       <Button type="button" className="btn btn-lg next-btn" text="Siguiente" />
 
