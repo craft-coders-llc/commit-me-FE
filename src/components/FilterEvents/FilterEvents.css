@@ -1,0 +1,61 @@
+.filter-fields {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.filter-input, .filter-select {
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: 2px solid #31C1B8;
+  border-radius: 0;
+  padding: 5px 8px;
+  font-size: 1rem;
+  width: 150px;
+}
+
+.filter-input:focus, .filter-select:focus {
+  outline: none;
+  border-color: #31C1B8;
+  box-shadow: none;
+}
+
+.filter-input::placeholder {
+  color: #ccc;
+}
+
+.filter-button {
+  background-color: #3C0956;
+  color: #31C1B8;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.filter-button:hover {
+  background-color: #50146e;
+}
+
+@media (max-width: 576px) {
+  .filter-input, .filter-select {
+    font-size: 0.95rem;
+    padding: 6px;
+    width: 120px;
+  }
+
+  .filter-button {
+    font-size: 0.95rem;
+    padding: 6px 12px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
