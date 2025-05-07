@@ -43,8 +43,8 @@ const Header = () => {
           className={`navbar-collapse ${isOpen ? "show" : ""}`}
           id="navbarNav"
         >
-          <div className="d-flex align-items-end gap-3">
-            <ul className="navbar-nav  me-0">
+          <div className="d-flex align-items-end ms-auto">
+            <ul className="navbar-nav  me-0 gap-1">
               <li className="nav-item">
                 <NavLink
                   className="nav-link"

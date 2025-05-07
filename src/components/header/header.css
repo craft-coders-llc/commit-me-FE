@@ -70,6 +70,8 @@
 
   .navbar-nav .nav-item {
     margin: 0;
+    grid-template-columns: repeat(1, 0.5fr);
+    grid-template-rows: repeat(1, auto);
   }
 
   .navbar .nav-link {
@@ -102,6 +104,7 @@
 
   .navbar-nav .nav-item {
     margin: 0;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .navbar .nav-link {
