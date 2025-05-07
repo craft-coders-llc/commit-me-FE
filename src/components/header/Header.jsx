@@ -1,10 +1,17 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    const user = localStorage.getItem("user");
+    setIsAuthenticated(!!user);
+  }, []);
 
   return (
     <nav className="navbar navbar-expand-lg shadow-sm">
@@ -17,15 +24,7 @@ const Header = () => {
           <img src="/img/logo.svg" alt="Commit-me Logo" className="logo" />
         </NavLink>
 
-        <div className="d-flex align-items-center">
-          <NavLink className="nav-link mobile-search-icon" to="/search">
-            <img
-              src="/img/lupaBuscador.svg"
-              alt="Buscar"
-              className="lupa-icon"
-            />
-          </NavLink>
-
+        <div className="d-flex align-items-end">
           <button
             className="navbar-toggler"
             type="button"
@@ -44,8 +43,8 @@ const Header = () => {
           className={`navbar-collapse ${isOpen ? "show" : ""}`}
           id="navbarNav"
         >
-          <div className="d-flex align-items-center gap-3">
-            <ul className="navbar-nav ms-auto me-0">
+          <div className="d-flex align-items-end gap-3">
+            <ul className="navbar-nav  me-0">
               <li className="nav-item">
                 <NavLink
                   className="nav-link"
@@ -82,28 +81,28 @@ const Header = () => {
                   Contacto
                 </NavLink>
               </li>
-              <li className="nav-item desktop-search-icon">
-                <NavLink
-                  className="nav-link"
-                  to="/search"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <img
-                    src="/img/lupaBuscador.svg"
-                    alt="Buscar"
-                    className="lupa-icon"
-                  />
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link"
-                  to="/login"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Iniciar Sesión
-                </NavLink>
-              </li>
+
+              {isAuthenticated ? (
+                <li className="nav-item desktop-perfil">
+                  <NavLink
+                    className="nav-link"
+                    to="/perfil"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Perfil
+                  </NavLink>
+                </li>
+              ) : (
+                <li className="nav-item">
+                  <NavLink
+                    className="nav-link"
+                    to="/login"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Iniciar Sesión
+                  </NavLink>
+                </li>
+              )}
             </ul>
           </div>
         </div>

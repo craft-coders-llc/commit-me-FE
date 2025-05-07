@@ -3,7 +3,7 @@
   padding: 0rem;
 }
 
-.navbar .nav-link {
+.navbar .nav-item .nav-link {
   color: #31C1B8;
   transition: color 0.3s ease;
   text-decoration: none;
@@ -12,8 +12,11 @@
   padding: 0.2rem 0.6rem;
 }
 
-.navbar .nav-link:hover,
-.navbar .nav-link.active {
+.navbar .nav-item .nav-link:hover{
+  color: #FE8284;
+}
+
+.navbar .nav-item .nav-link.active {
   color: #FE8284;
 }
 
