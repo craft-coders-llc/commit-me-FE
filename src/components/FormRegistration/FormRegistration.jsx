@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Form, Container, Row, Col } from "react-bootstrap";
 import Button from "../../components/button/Button";
 import "../FormRegistration/FormRegistration.css";
+import { createUser } from "../../services/getApiHook";
 
 const FormRegistration = () => {
   const [formData, setFormData] = useState({
@@ -28,6 +29,7 @@ const FormRegistration = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    createUser(formData);
     console.log("Datos del formulario enviados:", formData);
     alert("¡Usuario registrado exitosamente!");
   };
