@@ -2,26 +2,21 @@ import { useEffect, useState } from "react";
 import mockData from "../../data/mockData";
 import "./EventCard.css";
 
-function EventCard() {
+function EventCard(event) {
   const [events, setEvents] = useState([]);
-
-  useEffect(() => {
-    setEvents(mockData);
-  }, []);
-
-  if (!events) return <p>Cargando</p>;
+  console.log (event);
 
   return (
     <section>
-      {events.map((event) => (
+      {
         <div className="card" key={event.id}>
-          <img className="card-img" src={event.img} />
-          <h1 className="card-title">{event.name}</h1>
-          <p className="card-text">{event.description.slice(0, 50)}... </p>
-          <span className="card_date">{event.date}</span>
-          <span className="card_location">{event.location}</span>
+          <img className="card-img" src={event.event.image} />
+          <h1 className="card-title">{event.event.title}</h1>
+          <p className="card-text">{event.event?.description?.slice(0, 50)}... </p>
+          <span className="card_date">{event.event.date}</span>
+          <span className="card_location">{event.event.venue}</span>
         </div>
-      ))}
+      }
     </section>
   );
 }
