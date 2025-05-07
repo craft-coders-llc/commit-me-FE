@@ -63,7 +63,7 @@ npm run dev
 
 ## 🔗 Información adicional
 🎨 Código fuente: [Commit-Me Frontend](https://github.com/craft-coders-llc/commit-me-FE) <br>
-📂 Código fuente Backtend: [Commit-Me Backend](https://github.com/craft-coders-llc/commit-me-BE)
+📂 Código fuente Backend: [Commit-Me Backend](https://github.com/craft-coders-llc/commit-me-BE)
 
 ### 👥 **Equipo de Desarrollo**  
 
