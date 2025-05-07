@@ -1,12 +1,78 @@
-# React + Vite
+﻿# commit-me - Front End
+### Una aplicación de gestión de eventos
+![image](https://github.com/user-attachments/assets/91bbf268-c037-41fa-8d8e-972e0bb4888c)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Descripción
+**Commit-Me** es una aplicación (SPA) inclusiva para promocionar eventos y gestionar la reserva de entradas de los usuarios, pensada para el sector tecnológico.
+Este repositorio contiene el **frontend** del proyecto, desarrollado con **React** y **Bootstrap**.  
 
-Currently, two official plugins are available:
+![image](https://github.com/user-attachments/assets/22a4408c-6b3c-465b-8abc-261afd2f4dd2)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías utilizadas  
+- **React v19.1**
+- **Javascript ECMAScript 2023**  
+- **Bootstrap 5.3.6** (biblioteca para el CSS 3)  
+- **React Router 7.5.3** (Gestión de la navegación)
+- **Hooks personalizados**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Herramientas utilizadas
+- **VSCode**
+- **Postman 11.41** (para testear los endpoints)
+- **Gestión del equipo:** Trello
+- **Control de Versiones:** Git - GitHub
+
+## 📂 Estructura de la SPA
+
+
+## ✅ Funcionalidades
+
+- **Crear un evento:** Permite la creación de un nuevo artículo especificando su título, contenido, fecha de publicación, categoría y el usuario que lo crea.
+- **Listar todos los eventos:** Muestra una lista de todos los artículos disponibles en el periódico.
+- **Obtener un evento por ID:** Recupera un artículo específico utilizando su identificador único.
+- **Actualizar un evento:** Modifica el contenido de un artículo existente.
+- **Eliminar un evento:** Elimina un artículo del sistema.
+- **Crear un usuario:** Permite la creación de un nuevo usuario con nombre de usuario y correo electrónico (sin necesidad de autenticación o autorización en esta fase).
+- **Actualizar un usuario**
+- **Eliminar un usuario**
+- **Login**
+
+## ⚙️ Instalación y uso
+
+1. **Clona el repositorio**
+  ```
+bash
+git clone https://github.com/craft-coders-llc/commit-me-FE.git
+cd COMMIT-ME-FE
+   ```
+   
+2. **Instala las dependencias**
+  ```
+npm install
+  ```
+
+3. **Inicia el proyecto**
+  ```
+npm run dev
+  ```
+**La aplicación se ejecutará por defecto en http://localhost:5173**
+
+
+### ⚠️ Importante!
+>**Este frontend se conecta con un backend en JAVA Spring Boot que debe estar activo para la funcionalidad completa.**
+
+## 🔗 Información adicional
+🎨 Código fuente: [Commit-Me Frontend](https://github.com/craft-coders-llc/commit-me-FE) <br>
+📂 Código fuente Backtend: [Commit-Me Backend](https://github.com/craft-coders-llc/commit-me-BE)
+
+### 👥 **Equipo de Desarrollo**  
+
+#### 🎨 Frontend (FE)  
+- **Marta Ibarra** - https://github.com/Marpro24
+- **Karisha Melendez** - https://github.com/karisssha
+- **Carolina Mas** - https://github.com/Carocitta
+
+#### 📂 Backend (BE)  
+- **Priscila Guillen** - https://github.com/pgoliv-code
+- **Maria Bongoll** - https://github.com/Femcom-Mari
+
