@@ -37,18 +37,19 @@ const ContactForm = () => {
 
   return (
     <div className="formContainer">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="contact-form">
         <div className="contactContainer">
           <div className="contactInfo">
             <h2>Contáctanos</h2>
             <p>
-              mándanos un mail{" "}
+              {" "}
+              💌 Escríbenos a{" "}
               <a href="mailto:email@email.com" className="text-white">
-                email@email.com
+                info@commitme.com
               </a>
             </p>
-            <p>llámanos al 666 666 666</p>
-            <p>o deja tu consulta aquí</p>
+            <p>☎️ Llámanos al 666-666-666</p>
+            <p>O deja tu consulta aquí 👇🏽</p>
 
             <textarea
               className={`textArea ${error ? "textarea-error" : ""}`}
@@ -73,7 +74,14 @@ const ContactForm = () => {
           <div className="modalContent">
             <h3>✅ ¡Mensaje enviado!</h3>
             <p>Gracias por contactarnos. Te responderemos pronto.</p>
-            <button type="button" className="btn-cerrar" text="Cerrar" onClick={closeModal}> Cerrar </button>
+            <button
+              type="button"
+              className="btn-cerrar"
+              text="Cerrar"
+              onClick={closeModal}
+            >
+              Cerrar
+            </button>
           </div>
         </div>
       )}
