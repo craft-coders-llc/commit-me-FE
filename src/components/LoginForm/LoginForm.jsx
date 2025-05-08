@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./LoginForm.css";
+import { logIn } from "../../services/getApiHook";
 
 function LoginForm() {
   const [validated, setValidated] = useState(false);
@@ -13,28 +14,35 @@ function LoginForm() {
   const passwordRegex =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+const handleSubmit = (e) => {
+  e.preventDefault();
+  console.log("login");
+const userData=logIn({username:username,password:password})
+console.log(userData);
 
-    const isUsernameValid = usernameRegex.test(username);
-    const isPasswordValid = passwordRegex.test(password);
+/*const isUsernameValid = usernameRegex.test(username);
+  const isPasswordValid = passwordRegex.test(password);
 
     setUsernameValid(isUsernameValid);
     setPasswordValid(isPasswordValid);
     setValidated(true);
 
-    if (isUsernameValid && isPasswordValid) {
-      alert("Login realizado con éxito");
-    }
-  };
+  if(isUsernameValid && isPasswordValid){
+    alert("Login realizado con éxito")
+  }*/
+}
+
+
+
+
+
 
   return (
     <form
-      className={`login-form needs-validation ${
+      onSubmit={handleSubmit}className={`login-form needs-validation ${
         validated ? "was-validated" : ""
       }`}
-      noValidate
-      onSubmit={handleSubmit}
+      noValidateonSubmit={handleSubmit}
     >
       <div className="mb-3">
         <label htmlFor="validationCustomUsername" className="form-label">
@@ -48,6 +56,8 @@ function LoginForm() {
           onChange={(e) => setUsername(e.target.value)}
           required
           aria-describedby="username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
         />
         <div className="invalid-feedback">
           El nombre de usuario debe tener entre 4 y 12 caracteres alfanuméricos.
@@ -61,7 +71,6 @@ function LoginForm() {
           id="inputPassword1"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          required
         />
         <div className="invalid-feedback">
           La contraseña debe tener al menos 8 caracteres, incluyendo una

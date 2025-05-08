@@ -55,3 +55,15 @@ export const createEvent = (userId, eventData) => {
     .then((data) => console.log("Event created:", data))
     .catch((err) => console.error("Error creating event:", err));
 };
+
+
+export const logIn = (body) => {
+  fetch("http://localhost:8080/api/v1/auth/login", {
+    method: "POST",
+    headers: headers,
+    body: JSON.stringify(body),
+  })
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch((err) => console.error(err));
+};
