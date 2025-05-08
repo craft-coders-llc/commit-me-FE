@@ -47,7 +47,7 @@ function UserPage() {
               <h1 className="nickname">{user.username}</h1>
               <ButtonEdit />
             </div>
-            <h2 className="user-name">Bruce Wayne</h2>
+            <h2 className="user-name">{user.email}</h2>
           </div>
         </div>
         <div className="events-section">
