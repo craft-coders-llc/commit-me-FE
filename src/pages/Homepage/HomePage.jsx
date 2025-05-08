@@ -1,7 +1,6 @@
 import "./HomePage.css";
+import Footer from "../../components/footer/Footer";
 import Button from "../../components/button/Button";
-
-
 function Homepage() {
   return (
     <section className="main-section">

@@ -42,8 +42,7 @@ console.log(userData);
       onSubmit={handleSubmit}className={`login-form needs-validation ${
         validated ? "was-validated" : ""
       }`}
-      noValidate
-      onSubmit={handleSubmit}
+      noValidateonSubmit={handleSubmit}
     >
       <div className="mb-3">
         <label htmlFor="validationCustomUsername" className="form-label">
