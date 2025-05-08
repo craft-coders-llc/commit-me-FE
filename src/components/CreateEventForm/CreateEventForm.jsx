@@ -1,15 +1,17 @@
 import "./CreateEventForm.css";
 import Button from "../../components/button/Button";
 import { useState } from "react";
+import { createEvent } from "../../services/getApiHook";
 
 function CreateEventForm() {
   const [formData, setFormData] = useState({
-    nombre: "",
-    fechaHora: "",
-    participantes: "",
-    ubicación: "",
-    descripción: "",
-    imagen: null,
+    title: "",
+    description: "",
+    date: "",
+    time: "",
+    venue: "",
+    image: "",
+    categoryId: "",
   });
 
   const handleChange = (e) => {
@@ -22,27 +24,56 @@ function CreateEventForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    const userId = 1; //pasar user id a chapa aqui
+    const eventData = {
+      title: formData.title,
+      description: formData.description,
+      date: formData.date,
+      time: formData.time,
+      venue: formData.venue,
+      image: formData.image,
+      category: {
+        id: parseInt(formData.categoryId),
+      },
+      user: {
+        id: userId,
+      },
+    };
+    console.log(eventData);
+    createEvent(userId, eventData);
   };
 
   return (
     <form onSubmit={handleSubmit} className="createEvent-form">
       <div className="mb-3">
         <label className="form-label">Nombre del Evento</label>
-        <textarea
+        <input
+          type="text"
           className="form-control"
-          name="nombre"
-          value={formData.nombre}
+          name="title"
+          placeholder="Título"
+          value={formData.title}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <div className="mb-3">
+        <label className="form-label">Fecha</label>
+        <input
+          type="date"
+          className="form-control"
+          name="date"
+          value={formData.date}
           onChange={handleChange}
         />
       </div>
       <div className="mb-3">
-        <label className="form-label">Fecha y Hora</label>
+        <label className="form-label">Hora</label>
         <input
-          type="datetime-local"
+          type="time"
           className="form-control"
-          name="fechaHora"
-          value={formData.fechaHora}
+          name="time"
+          value={formData.time}
           onChange={handleChange}
         />
       </div>
@@ -60,7 +91,7 @@ function CreateEventForm() {
         <select
           className="form-control"
           name="modalidad"
-          value={formData.modalidad}
+          value={formData.categoryId}
           onChange={handleChange}
         >
           <option value="">Selecciona</option>
@@ -72,8 +103,8 @@ function CreateEventForm() {
         <label className="form-label">Ubicación</label>
         <textarea
           className="form-control"
-          name="ubicación"
-          value={formData.ubicacion}
+          name="venue"
+          value={formData.venue}
           onChange={handleChange}
         />
       </div>
@@ -81,8 +112,8 @@ function CreateEventForm() {
         <label className="form-label">Descripción</label>
         <textarea
           className="form-control"
-          name="descripción"
-          value={formData.descripcion}
+          name="description"
+          value={formData.description}
           onChange={handleChange}
           rows="3"
         ></textarea>
