@@ -1,0 +1,11 @@
+.profile-picture-section{
+    display:flex;
+    justify-content: center;
+    width: 25rem;
+   
+}
+
+.profile-picture{
+    justify-self: center;
+    border-radius: 100px;
+}

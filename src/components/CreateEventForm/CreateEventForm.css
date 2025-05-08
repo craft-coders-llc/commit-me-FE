@@ -1,0 +1,19 @@
+.createEvent-form {
+  width: 517px;
+  padding: 3rem;
+  background-color: #3C0956;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+
+}
+
+.submit-event-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-event-btn {
+  color: #3C0956;
+  background-color: #31C1B8;
+  width: 25%;
+}

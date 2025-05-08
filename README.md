@@ -1,4 +1,4 @@
-﻿# commit-me - Front End
+# commit-me - Front End
 ### Una aplicación de gestión de eventos
 ![image](https://github.com/user-attachments/assets/91bbf268-c037-41fa-8d8e-972e0bb4888c)
 
