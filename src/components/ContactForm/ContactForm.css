@@ -1,74 +1,83 @@
-.formContainer{
-display:flex;
-justify-content: center;
-padding:9rem;
-
-
-}
-.contactContainer{
-justify-self: center;
-padding: 1rem;
-width: 40rem;
-background-color: #3C0956;
-border-radius: 20px;
+.formContainer {
+  display: flex;
+  justify-content: center;
+  padding: 9rem;
+  color: white;
 }
 
-.contactInfo{
-    justify-items: center; 
+.contact-form {
+  padding: 3rem;
+  background-color: #3C0956;
+  border-radius: 30px;
+  margin-bottom: 1rem;
 }
 
-.textArea{
-display: flex;
-justify-items: center;
-padding: 3rem;
+.contactContainer {
+  width: 517px;
+  justify-self: center;
+  padding: 1rem;
+  width: 40rem;
+  background-color: #3C0956;
+  border-radius: 20px;
 }
 
-.buttonContainer{
-display: flex;
-flex-wrap: wrap;
-justify-self: center;
-padding:1rem;
+.contactInfo {
+  justify-items: center;
+  font-size: 1.5rem;
 }
 
-.btn-enviar{
-    background-color: #31C1B8;
-    color: #3C0956;
+.textArea {
+  display: flex;
+  justify-items: center;
+  padding: 3rem;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  padding: 1rem;
+}
+
+.btn-enviar {
+  background-color: #31C1B8;
+  color: #3C0956;
 }
 
 .modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .modalContent {
-    background:#31C1B8;
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 400px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
-  }
-  
-  .btn-cerrar{
-    background-color:#3C0956;
-    color: #31C1B8; 
-    border: none;
-    border-radius: 50px;
-    padding: 0.6rem 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  .btn-cerrar:hover {
-    background-color: #FE8284;
-    color: white;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #31C1B8;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cerrar {
+  background-color: #3C0956;
+  color: #31C1B8;
+  border: none;
+  border-radius: 50px;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-cerrar:hover {
+  background-color: #FE8284;
+  color: white;
+}

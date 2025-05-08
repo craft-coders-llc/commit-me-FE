@@ -14,10 +14,10 @@ function EventCard() {
   return (
     <section>
       {events.map((event) => (
-        <div className="card" key={event.id}>
-          <img className="card-img" src={event.img} />
-          <h1 className="card-title">{event.name}</h1>
-          <p className="card-text">{event.description.slice(0, 50)}... </p>
+        <div className="card-container" key={event.id}>
+          <img className="card_img" src={event.img} />
+          <h1 className="card_title">{event.name}</h1>
+          <p className="card_text">{event.description.slice(0, 50)}... </p>
           <span className="card_date">{event.date}</span>
           <span className="card_location">{event.location}</span>
         </div>

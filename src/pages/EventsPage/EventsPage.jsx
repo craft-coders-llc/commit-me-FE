@@ -7,9 +7,11 @@ function EventsPage() {
   return (
     <section>
       <EventsList />
-      <Button type="button" className="btn btn-lg next-btn" text="Siguiente" />
-
-      <Footer />
+      <Button
+        type="button"
+        className="custom-button btn-lg next-btn"
+        text="Siguiente"
+      />
     </section>
   );
 }
