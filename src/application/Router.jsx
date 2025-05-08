@@ -10,7 +10,6 @@ import ContactPage from "../pages/ContactPage/ContactPage";
 import Footer from "../components/footer/Footer";
 import RegistrationPage from "../pages/RegistrationPage/RegistrationPage";
 import CreateEventPage from "../pages/CreateEventPage/CreateEventPage";
-import UserPage from "../pages/UserPage/UserPage";
 import LoginPage from "../pages/LoginPage/LoginPage";
 
 function Router() {
@@ -26,7 +25,6 @@ function Router() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/registration" element={<RegistrationPage/>} />
-        <Route path="/user" element={<UserPage/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

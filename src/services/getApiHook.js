@@ -1,7 +1,7 @@
 const headers = { "Content-Type": "application/json" };
 
 export const getUserById = async (id) => {
-  return fetch(`http://localhost:8080/api/v1/users/${id}`)
+  return fetch(`http://localhost:8080/api/users/${id}`)
     .then((res) => res.json())
     .then((data) => {
       return data;
@@ -29,6 +29,15 @@ export const createUser = (body) => {
     .catch((err) => console.error(err));
 };
 
+export const getAllEvents = async () => {
+  return fetch("http://localhost:8080/api/v1/events")
+    .then((res) => res.json())
+    .then((data) => {
+      return data;
+    })
+    .catch((err) => console.error(err));
+};
+
 
 export const createEvent = (userId, eventData) => {
   fetch(`http://localhost:8080/api/v1/events/user/${userId}`, {
@@ -46,24 +55,3 @@ export const createEvent = (userId, eventData) => {
     .then((data) => console.log("Event created:", data))
     .catch((err) => console.error("Error creating event:", err));
 };
-
-export const getAllEvents = () =>{
-  return fetch("http://localhost:8080/api/v1/events")
-    .then((res) => res.json())
-    .then((data) => {
-      return data;
-    })
-    .catch((err) => console.error(err));
-};
-
-export const logIn = (body) => {
-  fetch("http://localhost:8080/api/v1/auth/login", {
-    method: "POST",
-    headers: headers,
-    body: JSON.stringify(body),
-  })
-    .then((res) => res.json())
-    .then((data) => console.log(data))
-    .catch((err) => console.error(err));
-};
-
