@@ -13,7 +13,7 @@ function Homepage() {
 
           <Button
             type="button"
-            className="btn  btn-lg"
+            className="custom-button us-button btn-lg"
             text="Quiénes somos"
             to={"/about"}
           />
