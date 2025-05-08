@@ -7,6 +7,7 @@ import FilterEvents from "../../components/FilterEvents/FilterEvents";
 function EventsPage() {
   return (
     <section>
+      <FilterEvents />
       <EventsList />
       <Button
         type="button"
