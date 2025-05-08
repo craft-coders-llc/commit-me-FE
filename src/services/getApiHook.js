@@ -37,3 +37,15 @@ export const getAllEvents = () =>{
     })
     .catch((err) => console.error(err));
 };
+
+export const logIn = (body) => {
+  fetch("http://localhost:8080/api/v1/auth/login", {
+    method: "POST",
+    headers: headers,
+    body: JSON.stringify(body),
+  })
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch((err) => console.error(err));
+};
+
